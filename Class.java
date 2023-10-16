@@ -53,6 +53,71 @@ public class Main {
         a.wyplac(6000000);
         
 
+public class House {
+    public int area; //powierzchnia domu
+    public boolean garage; //czy ma garaż
+    public int rooms; // liczba pokoi
+    public boolean garden; //czy ma garaz
+    public int floors; //liczba pieter
+
+    public double getPrice() {
+        return area * 3000;
+    }
+
+    
+public class Pies {
+    public String nazwa;
+    public String rasa;
+    public int wiek;
+
+    public void dajGlos(){
+        System.out.println(nazwa + ": HAU HAU");
+    }
+
+    
+    public class Samochod {
+    public String marka;
+    public String model;
+    public int predkosc;
+
+    public int przyspiesz(int a) {
+        return predkosc + a;
+    }
+
+    public int zwolnij(int a) {
+        if (predkosc - a < 0)
+        {
+            return 0;
+        }
+        return predkosc - a;
+    }
+
+        public class KontoBankowe {
+    public double saldo;
+
+    public void wplac(double kwota)
+    {
+        saldo+=kwota;
+    }
+     public void wyplac(double kwota)
+    {
+        if (saldo - kwota < 0) {
+            System.out.println("Nie można wypłacić danej kwoty");
+        }
+        else {
+            saldo-=kwota;
+        }
+    }
+
+}
+
+}
+
+
+}
+
+    
+}
 
 
 
